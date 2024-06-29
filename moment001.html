@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="javascript">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .time{
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Data & Time</h1>
+        <div id="currentDateTime" class="time"></div>
+    </div>
+    <script>
+        function updateDateTime() {
+            const now = moment();
+            const formattedDateTime = now.format("DD-MMMM-YYYY, hh:mm:ss a")
+            document.getElementById(`currentDateTime`).textContent = formattedDateTime;
+        }
+        setInterval(updateDateTime, 1000)
+        updateDateTime()
+    </script>
+</body>
+
+</html>

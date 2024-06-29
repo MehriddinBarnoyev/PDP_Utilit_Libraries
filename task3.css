@@ -1,0 +1,30 @@
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: rgb(17, 16, 16);
+    color: #f3fbf8;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(122, 175, 153);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
